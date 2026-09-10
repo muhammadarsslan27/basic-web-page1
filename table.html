@@ -6,7 +6,23 @@
     <title>Table</title>
 </head>
 <body>
-   <table border="1" style="margin-top: 50px; margin-left: 50px;">
+
+ <style>
+  body{ text-align: center;}
+  #tab{
+    border: 2px black solid; 
+    text-align: center; 
+    border-spacing: 0;
+  } 
+ 
+ #tab th { background-color: black; color: white; border: 1px white solid;}
+ 
+ #tab td{ border: 1px black solid;} 
+   
+#table-data{ background-color: gray;}
+
+ </style>
+  <table border="1" style="margin-top: 50px; margin-left: 50px;">
     <tr> 
    <th>ID</th>
    <th>Nmae</th>
@@ -65,8 +81,6 @@
     </tr>
     
   </table>
-
-
 <!-- 9td
  7tr -->
   <table border="2" style="text-align: center;">
@@ -78,8 +92,9 @@
  <th> 5<br> 9:58</th>
  <th> 6<br> 9:58</th>
  <th> 7<br> 9:58</th>
- 
-<tr> 
+ <th> 7<br> 9:58</th>
+<tr>  
+  
 <td>monday</td>
 <td>abc</td>
 <td>abc</td>
@@ -118,7 +133,7 @@
 
 <tr>
 <td>wed</td>
-<td  colspan="3">abc</td>
+<td colspan="3">abc</td>
 <td>abs</td>
 <td>bac</td>
 <td>abc</td>
@@ -136,5 +151,50 @@
 </tr>
  
   </table>
+
+
+
+
+
+      <table id="tab">
+
+        <tr> 
+        <th rowspan="2"> Student Name</th>
+        <th colspan="3">Marks</th>
+        </tr>
+        <tr><th>Math</th>
+        <th>Science</th>
+      <th>English</th></tr>
+      <tr id="table-data">
+      <td>Amit</td>
+      <td>78</td>
+      <td>82</td>
+      <td>74</td>
+      </tr>
+      <tr>
+      <td>Neha</td>
+      <td>78</td>
+      <td>82</td>
+      <td>74</td>
+      </tr>
+      <tr id="table-data">
+      <td>Rahul</td>
+      <td>78</td>
+      <td>82</td>
+      <td>74</td>
+      </tr>
+      <tr>
+      <td>Priya</td>
+      <td>78</td>
+      <td>82</td>
+      <td>74</td>
+      </tr>
+      <tr id="table-data">
+      <td>Ankit</td>
+      <td>78</td>
+      <td>82</td>
+      <td>74</td>
+      </tr>
+      </table>
 </body>
 </html>
